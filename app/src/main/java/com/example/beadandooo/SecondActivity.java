@@ -25,6 +25,10 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent Covid = new Intent(SecondActivity.this, ThirdActivity.class);
+                Covid.putExtra("nev", nev.getText().toString());
+                Covid.putExtra("datum", datum.getText().toString());
+                Covid.putExtra("szig", szig.getText().toString());
+                startActivity(Covid);
             }
         });
     }
