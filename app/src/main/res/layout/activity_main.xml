@@ -11,17 +11,18 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:src="@drawable/covid" />
-    <EditText
-        android:id="@+id/editText"
-        android:hint="Regisztráció Covid oltásra"
+    <TextView
+        android:id="@+id/textView"
+        android:text="Regisztráció Covid oltásra"
         android:layout_margin="8dp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="40dp"
         android:textSize="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/regisztracio"
         android:layout_width="339dp"
         android:layout_height="wrap_content"
         android:text="Regisztráció"/>

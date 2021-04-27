@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText Regisztráció Covid oltásra = findViewById(R.id.editText);
-        Button gomb = findViewById(R.id.Regisztráció);
+        TextView regisztracio = findViewById(R.id.textView);
+        Button gomb = findViewById(R.id.regisztracio);
 
-        gomb.setOnLongClickListener(new View.OnClickListener() {
+        gomb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Covid = new Intent(packageContest MainActivity.this, SecondActivity.class)
+                Intent Covid = new Intent(MainActivity.this, SecondActivity.class)
             }
         });
     }
